@@ -1,6 +1,8 @@
 
 # Map Generation
 
+Run LfSH_mapgen.py
+
 ## Basic Algorithm
 
 We utilized the mechanism used to generate the existing Barn Dataset.
