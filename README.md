@@ -2,11 +2,11 @@
 
 This project was worked on 'Machine Learning and Programming(MEU5053.01-00)' class project
 
-# Summery
+# Summary
 
-- Our goal is to navigate mobile robot to its destination without encountering any collisions. 
+- Our goal is to navigate a mobile robot to its destination without any collisions.
 At ICRA 2024, [the BARN challenge](https://cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge24.html) has been performing navigation missions on the simulated BARN dataset.
-- [LFH(Learning from Hallucination)](https://cs.gmu.edu/~xiao/papers/hallucination.pdf) is a benchmark model applied in constrained environments, but there are mismatch with real-world environments and limited generalization.
+- [LFH(Learning from Hallucination)](https://cs.gmu.edu/~xiao/papers/hallucination.pdf) is a benchmark model applied in constrained environments, there is a mismatch with real-world environments and limited generalization.
     
     → Utilize RL models to generalize of the navigation model
     
@@ -16,8 +16,8 @@ At ICRA 2024, [the BARN challenge](https://cs.gmu.edu/~xiao/Research/BARN_Challe
 
 # Environment setup
 
-- We recommand to use conda env
-- To train the model, [Singularity](https://docs.sylabs.io/guides/latest/admin-guide/installation.html#installation-on-linux) must be installed.
+-We recommend using a conda environment.
+- To train the model, [Singularity](https://docs.sylabs.io/guides/latest/admin-guide/installation.html#installation-on-linux) needs to be installed.
 - To run inference (gazebo simulation), you need to install the [ROS melodic](https://wiki.ros.org/melodic/Installation/Ubuntu).
 
 ```bash
@@ -50,8 +50,7 @@ python3 train.py --config configs/e2e_default_TD3.yaml
 python3 train.py --config configs/e2e_default_SAC.yaml
 ```
 
-- The environment dataset used for training can be found at [rl-based-navigation/map_gen/](https://github.com/msjun23/RL-based-Navigation/tree/main/map_gen)
-- Simulation training was conducted on a system with the following specifications: 
+- The simulation training was conducted on a system with the following specifications:
 
 > CPU: Intel(R) Xeon(R) Gold 5320 CPU @ 2.20GHz
 >
@@ -91,13 +90,13 @@ python report_test.py
 
 You should see the report as this:
 
-> Avg Time: 39.5296, Avg Success: 0.8500, Avg Collision: 0.0560, Avg Timeout: 0.0940
+> Avg Time: 7.60, Avg Success: 0.9567, Avg Collision: 0.0230, Avg Timeout: 0.0203
 > 
 
 # Experiments Results
 
 - Simulation tests were conducted in a ROS Gazebo environment using 50 different BARN datasets.
-- We compared the [DWA(Dynamic Window Approach)](https://github.com/Daffan/the-barn-challenge/tree/main), [E-Band(Elastic Band)](https://github.com/Daffan/the-barn-challenge/tree/eband), and [LFH(Learning from Hallucination)](https://github.com/Daffan/the-barn-challenge/tree/LfH) models
+- We compared [DWA(Dynamic Window Approach)](https://github.com/Daffan/the-barn-challenge/tree/main), [E-Band(Elastic Band)](https://github.com/Daffan/the-barn-challenge/tree/eband), and [LFH(Learning from Hallucination)](https://github.com/Daffan/the-barn-challenge/tree/LfH) models
 
 | Method | Learning | Avg Time[s] ↓ | Avg Success[%] ↑ | Avg Collision[%] ↓ | Avg Timeout[%] ↓ |
 | --- | --- | --- | --- | --- | --- |
