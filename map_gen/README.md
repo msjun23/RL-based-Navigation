@@ -3,34 +3,36 @@
 
 ```bash
 cd map_gen
-run LfSH_mapgen.py
+python LfSH_mapgen.py
 ```
 
 ## Basic Algorithm
 
-We utilized the mechanism used to generate the existing Barn Dataset.
+We utilized the mechanism used to generate the existing BARN Dataset.
 
-1. Obtain information about the Global Path and the World from the existing Barn Dataset.
-   - Note that it is also possible to use the path and world information from a customized dataset instead of the Barn Dataset.
+1. Obtain information about the Global Path and the World from the existing BARN Dataset.
+   - Note that it is also possible to use the path and world information from a customized dataset instead of the BARN Dataset.
 
-2. Expand the space by the user-specified parameter perpendicular to the direction of the Global Path, 
+2. Expand the space by a user-specified parameter perpendicular to the direction of the Global Path, 
    assuming the remaining space as obstacles to create a narrow passage. 
-   (This is similar to the Hallucination technique of the existing LfH).
+   (This is similar to the hallucination technique of the existing LfH).
 
-![image](https://github.com/msjun23/RL-based-Navigation/assets/97781279/e81b9f8e-d248-46fd-ab03-09aa4e3a52f4)
+<div align="center">
+   <img src="https://github.com/msjun23/RL-based-Navigation/assets/97781279/e81b9f8e-d248-46fd-ab03-09aa4e3a52f4" alt="image" width="300" height="300">
+</div>
 
-
-3. Further sampling is performed within the narrow passage, 
+3. Further sampling is performed within the narrow passage,
    creating a more constrained environment compared to the existing LfH.
+<div align="center">
+   <img src="https://github.com/msjun23/RL-based-Navigation/assets/47807421/1b3a5dda-445f-4fd2-959e-67b31cbdaef2" alt="create_obstacle_samples" width="300" height="300">
+</div>
 
-![image](https://github.com/msjun23/RL-based-Navigation/assets/97781279/912d05cb-84df-413a-b542-e046450ef2b9)
-
-
-4. If there are environments where the mobile robot cannot pass, 
+4. If there are environments where the mobile robot cannot pass,
    the free space is expanded around the sampled obstacles to make the environment more suitable for training.
 
-![image](https://github.com/msjun23/RL-based-Navigation/assets/97781279/26e65ef5-8952-4970-bb35-eac089e1dd1a)
-
+<div align="center">
+   <img src="https://github.com/msjun23/RL-based-Navigation/assets/47807421/7f3775cd-d7ea-452c-b29c-9b425bbb02d2" alt="expand_free_space" width="300" height="300">
+</div>
 
 ## Additional Considerations
 
@@ -38,7 +40,7 @@ We utilized the mechanism used to generate the existing Barn Dataset.
    - `world_file = 'train_data/world_files/world_%d.world' % iteration`
    - `path_file  = 'test_data/path_files/path_%d.npy'      % iteration`
    
-   Here, `path_file` is the paths to the reference data, 
+   Here, `path_file` refers to the paths to the reference data,
      and `world_file` is the path to the folder you want to generate.
 
 2. **Parameters**
