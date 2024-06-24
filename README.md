@@ -16,7 +16,7 @@ At ICRA 2024, [the BARN challenge](https://cs.gmu.edu/~xiao/Research/BARN_Challe
 
 # Environment setup
 
--We recommend using a conda environment.
+- We recommend using a conda environment.
 - To train the model, [Singularity](https://docs.sylabs.io/guides/latest/admin-guide/installation.html#installation-on-linux) needs to be installed.
 - To run inference (gazebo simulation), you need to install the [ROS melodic](https://wiki.ros.org/melodic/Installation/Ubuntu).
 
@@ -108,7 +108,7 @@ You should see the report as this:
 
 # Map Generation
 
-If you want to generate Map, please go to [link](https://github.com/msjun23/RL-based-Navigation/tree/main/map_gen).
+- If you want to generate Map, please go to [link](https://github.com/msjun23/RL-based-Navigation/tree/main/map_gen).
 
 # QnA
 
