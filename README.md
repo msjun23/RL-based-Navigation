@@ -102,6 +102,10 @@ You should see the report as this:
 | Ours(SAC) | ○ | 9.02 | 86.67 | 13.00 | 0.33 |
 | Ours(TD3) | ○ | 7.60 | 95.67 | 2.30 | 2.03 |
 
+# Map Generation
+
+If you want to generate Map, please go to [link](https://github.com/msjun23/RL-based-Navigation/tree/main/map_gen).
+
 # QnA
 
 1. **What is the novelty of your approach compared to existing methods in terms of RL settings**
