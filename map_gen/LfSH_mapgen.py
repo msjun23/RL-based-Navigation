@@ -190,9 +190,9 @@ def Obstacle_Expand(free, obstacle_map, before_map,after_map, Boundary, rows, co
     return obstacle_map
 
 def main(iteration=0, seed=0, smooth_iter=4, fill_pct=.5, rows=60, cols=30, show_metrics=1):
-    world_file = 'train_data/world_files/world_%d.world' % iteration
-    path_file = 'test_data/path_files/path_%d.npy' % iteration
-    grid_file = 'test_data/grid_files/grid_%d.npy' % iteration
+    world_file = '../jackal_helper/worlds/BARN/world_%d.world' % iteration
+    path_file = '../jackal_helper/worlds/BARN/path_files/path_%d.npy' % iteration
+    # grid_file = '../jackal_helper/worlds/BARN/grid_files/grid_%d.npy' % iteration
     free_space = 8
 
     # 예제 패스 데이터 불러오기
