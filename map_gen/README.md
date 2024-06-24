@@ -1,10 +1,10 @@
 
 # Map Generation
 
-'''bash
+```bash
 cd map_gen
 run LfSH_mapgen.py
-'''
+```
 
 ## Basic Algorithm
 
