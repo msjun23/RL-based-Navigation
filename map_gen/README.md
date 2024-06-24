@@ -1,4 +1,3 @@
-
 # Map Generation
 
 ```bash
@@ -16,15 +15,22 @@ We utilized the mechanism used to generate the existing BARN Dataset.
 2. Expand the space by a user-specified parameter perpendicular to the direction of the Global Path, 
    assuming the remaining space as obstacles to create a narrow passage. 
    (This is similar to the hallucination technique of the existing LfH).
+   (Binary data of a sample map is attached to help understand; 0 represents empty space, 1 represents limited space)
 
 <div align="center">
    <img src="https://github.com/msjun23/RL-based-Navigation/assets/97781279/e81b9f8e-d248-46fd-ab03-09aa4e3a52f4" alt="image" width="300" height="300">
+</div>
+<div align="center">
+   <img src="https://github.com/msjun23/RL-based-Navigation/assets/173318115/22f00d6f-ceea-43f0-a9e4-87a2cbb9034f" alt="image" width="300" height="300">
 </div>
 
 3. Further sampling is performed within the narrow passage,
    creating a more constrained environment compared to the existing LfH.
 <div align="center">
    <img src="https://github.com/msjun23/RL-based-Navigation/assets/47807421/1b3a5dda-445f-4fd2-959e-67b31cbdaef2" alt="create_obstacle_samples" width="300" height="300">
+</div>
+<div align="center">
+   <img src="https://github.com/msjun23/RL-based-Navigation/assets/173318115/9ce3d309-5bbb-4f59-99a7-8cc28a9bd86b" alt="image" width="300" height="300">
 </div>
 
 4. If there are environments where the mobile robot cannot pass,
