@@ -52,7 +52,12 @@ python3 train.py --config configs/e2e_default_SAC.yaml
 
 - The environment dataset used for training can be found at [rl-based-navigation/map_gen/](https://github.com/msjun23/RL-based-Navigation/tree/main/map_gen)
 - Simulation training was conducted on a system with the following specifications: 
-CPU: Intel(R) Xeon(R) Gold 5320 CPU @ 2.20GHz, RAM: 128GB, GPU: RTX 3090 24GB.
+
+> CPU: Intel(R) Xeon(R) Gold 5320 CPU @ 2.20GHz
+>
+> RAM: 128GB
+> 
+> GPU: RTX 3090 24GB
 - Our training logs can be found at [rl-based-navigation/logging/](https://github.com/msjun23/RL-based-Navigation/tree/main/logging)
 
 # **Run Simulations**
