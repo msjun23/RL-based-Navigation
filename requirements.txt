@@ -1,0 +1,12 @@
+torch
+gym
+GPUtil
+rospkg
+tensorboard
+tensorboardX
+netifaces
+torchvision
+torchaudio
+transformers
+spython
+defusedxml
