@@ -25,6 +25,10 @@ At ICRA 2024, [the BARN challenge](https://cs.gmu.edu/~xiao/Research/BARN_Challe
 conda create -n jackal python=3.9
 conda activate jackal
 
+# Install Python dependencies
+pip3 install defusedxml rospkg netifaces numpy
+pip3 install -r requirements.txt
+
 # Get required packages
 mkdir -p jackal_ws/src
 cd jackal_ws/src
